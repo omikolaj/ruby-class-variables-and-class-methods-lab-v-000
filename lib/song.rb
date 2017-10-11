@@ -50,6 +50,7 @@ class Song
         hash[i] = @@genre_count.count(i)
       end
     end
+    Hash
   end
 
 end
