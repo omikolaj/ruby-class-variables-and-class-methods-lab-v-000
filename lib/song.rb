@@ -46,7 +46,7 @@ class Song
     genre_hash = {}
     key = 0
     unique = self.genres
-    binding.pry
+    #binding.pry
     @@genres.each do |i|
       if(unique.any?(i))
       genre_hash[i] = key + 1
