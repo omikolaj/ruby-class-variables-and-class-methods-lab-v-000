@@ -46,12 +46,12 @@ class Song
     genre_hash = {}
     unique = self.genres
     binding.pry
-    @@genres.each do |i|
+    #@@genres.each do |i|
 
-      
-        
-        
-        
+
+
+
+
   end
 
 end
