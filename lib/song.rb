@@ -50,8 +50,9 @@ class Song
     @@genres.each do |i|
       if(unique.any?(i))
       genre_hash[i] = key + 1
+      end
     end
+    genre_hash
   end
-  genre_hash
-end
+  
 end
