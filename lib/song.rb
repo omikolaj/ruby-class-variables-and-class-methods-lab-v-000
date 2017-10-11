@@ -41,21 +41,15 @@ class Song
     unique
   end
 
-
   def self.genre_count
-    genre_hash = {}
-    key = 0
-    unique = self.genres
-    #binding.pry
+    unique = []
+    hash = {}
     @@genres.each do |i|
-      if(unique.include?(i))
-        #binding.pry
-      genre_hash[i] = key + 1
-      key += 1
-
+      if(!unique.include?(i))
+        unique << i
+        hash[i] = @@genre_count.count(i)
       end
     end
-    genre_hash
   end
-
+  
 end
