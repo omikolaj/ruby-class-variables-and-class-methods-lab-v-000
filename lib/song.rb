@@ -38,7 +38,7 @@ class Song
         unique << i
       end
     end
-    binding.pry
+    unique
   end
 
 
