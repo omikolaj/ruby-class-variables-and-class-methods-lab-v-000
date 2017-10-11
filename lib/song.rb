@@ -34,6 +34,7 @@ class Song
   def self.genres
     unique = []
     @@genres.each do |i|
+      binding.pry
       if(!unique.include?(i))
         unique << i
       end
