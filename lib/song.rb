@@ -57,7 +57,7 @@ class Song
     unique = []
     hash = {}
     @@artists.each do |a|
-      if(!unique.include(a))
+      if(!unique.include?(a))
         unique << a
         hash[a] = @@artists.count(a)
       end
