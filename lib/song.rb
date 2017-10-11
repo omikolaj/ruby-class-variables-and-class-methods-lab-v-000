@@ -54,7 +54,15 @@ class Song
   end
 
   def self.artist_count
-
+    unique = []
+    hash = {}
+    @@artist.each do |a|
+      if(!unique.include(a))
+        unique << a
+        hash[a] = @@artists.count(a)
+      end
+    end
+    hash
   end
 
 end
