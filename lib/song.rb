@@ -51,6 +51,7 @@ class Song
       if(unique.include?(i))
         binding.pry
       genre_hash[i] = key + 1
+      key += 1
 
       end
     end
