@@ -48,7 +48,6 @@ class Song
       if(!unique.include?(i))
         unique << i
         hash[i] = @@genres.count(i)
-        #binding.pry
       end
     end
     hash
