@@ -47,7 +47,7 @@ class Song
     @@genres.each do |i|
       if(!unique.include?(i))
         unique << i
-        hash[i] = @@genre.count(i)
+        hash[i] = @@genres.count(i)
         #binding.pry
       end
     end
